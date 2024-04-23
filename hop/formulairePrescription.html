@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Consultation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-image: url('images/Bg_formulaire.jpeg'); background-size: cover;">
+    <header class="navbar transparent">
+        <h1 class="logo">Centre Médical Harmonie</h1>
+        <ul class="nav-links">
+            <li><a class="Z" href="index.html">Accueil</a></li>
+            <li><a class="Z" href="formulairePrescription.html">Prescription</a></li>
+            <li><a class="Z" href="formulaireMedecin.html">Medecin</a></li>
+            <li><a class="Z" href="formulairePatient.html">Patient</a></li>
+        </ul>
+    </header>
+    
+    <div class="container">
+        <h2>Formulaire de Consultation</h2>
+
+        <form action="traitement_consultation.php" method="post">
+            <label for="nom_patient">Nom du Patient :</label>
+            <input type="text" id="nom_patient" name="nom_patient" required>
+
+            <label for="hauteur">Hauteur (cm) :</label>
+            <input type="number" id="hauteur" name="hauteur" required>
+
+            <label for="poids">Poids (kg) :</label>
+            <input type="number" id="poids" name="poids" required>
+
+            <label for="diagnostic">Diagnostic :</label>
+            <textarea id="diagnostic" name="diagnostic" required></textarea>
+
+            <label for="date_consultation">Date de Consultation :</label>
+            <input type="date" id="date_consultation" name="date_consultation" required>
+
+            <label for="prescription">Prescription :</label>
+            <textarea id="prescription" name="prescription"></textarea>
+
+            <input type="submit" value="Enregistrer Consultation">
+        </form>
+    </div>
+</body>
+</html>
+

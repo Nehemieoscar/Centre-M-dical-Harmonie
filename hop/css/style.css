@@ -1,0 +1,271 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+} */
+
+/* Navbar */
+.navbartransparent {
+    color: blue;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    border: 0.5px solid white;
+    background-color: rgba(0, 0, 255, 0.3); /* Couleur bleue avec une opacité de 30% */
+}
+
+
+.logo {
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+.phone-number {
+    margin-right: 20px; 
+}
+
+
+/*  styles pour le dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #09738d;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #0fa38f;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #1c335f;
+}
+
+
+/* Corps de la page */
+.corps {
+    position: relative;
+    min-height: 100vh; 
+}
+
+.background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.corps-content {
+    padding: 100px 20px;
+}
+
+.corps-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.corps-content h1 {
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.T {
+    display: inline-block;
+    background-color: #fff;
+    color: #4CAF50;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.T:hover {
+    background-color: #e0e0e0;
+}
+
+/* Pied de page */
+footer{
+   
+    color: white;
+    padding: 50px 0;
+    width: 100%;
+    
+    
+}
+
+.main-containerF{
+width: 100%;
+
+}
+
+.containerF{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    border-bottom: 3px solid blue;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+
+.footer-section {
+    
+    padding: 0 20px;
+}
+
+.footer-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.footer-section p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #0d3fc7;
+}
+
+form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #12328b;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+}
+
+form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #03192b;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #1b60b9;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* Formulaire  CSS commun pour les formulaires */
+
+
+.container{
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background: transparent;
+    
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #0a1c50;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #af9318;
+}
